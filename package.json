@@ -1,0 +1,29 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "This is a blog site for developers to post and comment on other posts.",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3-rc.0",
+    "sequelize": "^6.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ance-301/tech-blog.git"
+  },
+  "author": "1ance-301",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1ance-301/tech-blog/issues"
+  },
+  "homepage": "https://github.com/1ance-301/tech-blog#readme"
+}

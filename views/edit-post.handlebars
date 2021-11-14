@@ -1,0 +1,20 @@
+<article class="has-text-centered">
+    <a href="/dashboard" class="button is-link has-text-black m-2"> &larr; Back to Dashboard</a>
+    <h2 class="has-text-link is-size-3 has-text-weight-medium">
+        Edit Post
+    </h2>
+    <form class="edit-post-form">
+        <div>
+            <p id="post-title">{{post.title}}</p>
+            <input name="post-text" type="text" value="{{post.post_text}}" />
+        </div>
+        <div>
+            <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+        </div>
+        <button type="submit" class="button is-success has-text-black">Save Post</button>
+        <button type="button" class="button is-danger has-text-black">Delete Post</button>
+    </form>
+</article>
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>

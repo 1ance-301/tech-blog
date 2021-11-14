@@ -1,0 +1,30 @@
+<section class="has-text-centered">
+    <h2 class="has-text-link is-size-3 has-text-weight-medium">Create New Post</h2>
+
+    <form class="new-post-form">
+        <div class="mb-2">
+            <label for="post-title">Title</label>
+            <input type="text" id="post-title" name="post-title" />
+        </div>
+        <div class="mb-2">
+            <label for="post-text">Text</label>
+            <input type="text" id="post-text" name="post-text" />
+        </div>
+        <button type="submit" class="button is-success has-text-black">Create</button>
+    </form>
+</section>
+{{#if posts.length}}
+<section class="has-text-centered">
+    <h2 class="has-text-link is-size-3 is-underlined">Your Posts</h2>
+
+    <ol>
+        {{#each posts as |post|}}
+        <li>
+            {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link button is-success has-text-black mt-3">Edit Post</a>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
+<script src="/javascript/add-post.js"></script>
